@@ -1,14 +1,15 @@
-var PanelAIsVisible = true;
+function LoginPanelVisible(){
+  var loginPanel = document.getElementById("LoginPanel");
+  var registerPanel = document.getElementById("RegisterPanel");
 
-function ManipulatePanelA(){
-  var panelA = document.getElementById("PanelA");
+  loginPanel.style.visibility = "visible";
+  registerPanel.style.visibility = "hidden";
+}
 
-  if (PanelAIsVisible){
-    panelA.style.visibility = "hidden"
-    PanelAIsVisible = false;
-    return;
-  }
-  
-  panelA.style.visibility = "visible"
-  PanelAIsVisible = true;
+function RegisterPanelVisible(){
+  var loginPanel = document.getElementById("LoginPanel");
+  var registerPanel = document.getElementById("RegisterPanel");
+
+  loginPanel.style.visibility = "hidden";
+  registerPanel.style.visibility = "visible";
 }

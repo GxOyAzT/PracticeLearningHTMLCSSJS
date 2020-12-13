@@ -3,16 +3,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sytle.css">
-  <title>Document</title>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <button onclick="ManipulatePanelA()">PanelA</button>
-  <button>PanelB</button>
-  <div class="Panel PanelA" id="PanelA">
-    HelloA
-  </div>
-  <div class="Panel PanelB" id="PanelB">
-    HelloB
+  <div class="LoginMainContainer">
+    <div class="LMCButtonsContainer">
+      <div class="LMCBCButton LMCBCButtonL" onclick="LoginPanelVisible()">
+        <div>Log in</div>
+      </div>
+      <div class="LMCBCButton LMCBCButtonR" onclick="RegisterPanelVisible()">
+        <div>Register</div>
+      </div>
+    </div>
+    <div class="LoginRegisterContainer">
+      <div class="LoginRegisterPanel LoginPanel" id="LoginPanel">
+        <div class="LoginPanelForm">
+          <form class="FormInherit">
+            <input type="text" placeholder="emial" class="LoginInput"/>
+            <input type="password" style="margin-top: 20px;" placeholder="password" class="LoginInput"/>
+            <button class="LoginRegisterButton" type="submit">Log in</button>
+          </form>
+        </div>
+      </div>
+      <div class="LoginRegisterPanel RegisterPanel" id="RegisterPanel">
+        Register
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
