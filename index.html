@@ -7,28 +7,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="LoginMainContainer">
-    <div class="LMCButtonsContainer">
-      <div class="LMCBCButton LMCBCButtonL" onclick="LoginPanelVisible()">
-        <div>Log in</div>
-      </div>
-      <div class="LMCBCButton LMCBCButtonR" onclick="RegisterPanelVisible()">
-        <div>Register</div>
-      </div>
+  <div class="Background"></div>
+  <div class="LoginRegisterMainContainer">
+    <div class="LoginContainer LoginRegisterContainers" id="LoginContainerId" onclick="ClickLoginContainer()">
+      <div class="LoginRegisterLabel" id="LoginLabel">Log in</div>
+      <form id="LogInFormId">
+        <input type="text" placeholder="emial" class="LoginRegisterInput" />
+        <input type="password" style="margin-top: 20px;" placeholder="password" class="LoginRegisterInput" />
+        <button class="LoginButton LoginRegisterButton" type="submit">Log in</button>
+      </form>
     </div>
-    <div class="LoginRegisterContainer">
-      <div class="LoginRegisterPanel LoginPanel" id="LoginPanel">
-        <div class="LoginPanelForm">
-          <form class="FormInherit">
-            <input type="text" placeholder="emial" class="LoginInput"/>
-            <input type="password" style="margin-top: 20px;" placeholder="password" class="LoginInput"/>
-            <button class="LoginRegisterButton" type="submit">Log in</button>
-          </form>
-        </div>
-      </div>
-      <div class="LoginRegisterPanel RegisterPanel" id="RegisterPanel">
-        Register
-      </div>
+    <div class="RegisterContainer LoginRegisterContainers" id="RegisterContainerId" onclick="ClickRegisterContainer()">
+      <div class="LoginRegisterLabel" id="RegisterLabel">Register</div>
+      <form id="RegisterFormId">
+        <input type="text" placeholder="emial" class="LoginRegisterInput"/>
+        <input type="password" style="margin-top: 20px;" placeholder="password" class="LoginRegisterInput" />
+        <input type="password" style="margin-top: 20px;" placeholder="repeat password" class="LoginRegisterInput" />
+        <button class="RegisterButton LoginRegisterButton" type="submit">Log in</button>
+      </form>
     </div>
   </div>
   <script src="script.js"></script>
