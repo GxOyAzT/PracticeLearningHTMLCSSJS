@@ -17,7 +17,7 @@
   transform: rotate(-30deg);
 }
 
-.IconContainer {
+#IconContainer {
   position: fixed;
   height: 250px;
   width: 250px;
@@ -29,7 +29,7 @@
   z-index: 10;
 }
 
-.NavigationBar {
+#NavigationBar {
   position: fixed;
   top: 140px;
   left: 0;
@@ -39,6 +39,7 @@
   padding-top: 20px;
   overflow: visible;
   z-index: 9;
+  transition: top 1s;
 }
 
 .NBButton {
