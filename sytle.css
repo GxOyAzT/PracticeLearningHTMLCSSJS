@@ -17,139 +17,134 @@
   transform: rotate(-30deg);
 }
 
-.LoginRegisterMainContainer {
-  position: relative;
-  height: 550px;
-  width: 650px;
-  top: 50%;
-  left: calc(50% - 150px);
-  transform: translate(-50%, -50%);
-  background: transparent;
-}
-
-.LoginContainer {
-  height: 100%;
-  width: 330px;
-  right: 0px;
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(48, 78%, 82%, 1) 0%,
-    hsla(340, 87%, 59%, 1) 100%
-  );
-}
-
-.RegisterContainer {
-  height: 80%;
-  width: 270px;
-  right: calc(100% - 270px);
-  background: -webkit-linear-gradient(
-    270deg,
-    hsla(217, 100%, 50%, 1) 20%,
-    hsla(186, 100%, 69%, 1) 100%
-  );
-}
-
-.LoginRegisterContainers {
+.BackgroundAnimationsContainer {
+  height: 300px;
+  width: 300px;
   position: absolute;
-  transition: all 1s;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 20px;
-  font-size: 5vh;
-  overflow: hidden;
-}
-
-.LoginRegisterLabel {
+  right: 0;
+  bottom: 0;
   background: transparent;
-  position: relative;
-  transform: translateY(-50%);
-  text-align: center;
-  font-size: 60px;
-  color: white;
 }
 
-#LoginLabel {
-  top: 20%;
-  transition: all 1s;
-}
-
-#RegisterLabel {
-  top: 50%;
-  transition: all 1s;
-}
-
-#LogInFormId {
+.BackgroundAnimationSquare-1 {
   position: absolute;
-  height: 30%;
-  top: 40%;
-  width: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.5s;
-  background: transparent;
+  animation: increase-1 10s infinite forwards;
 }
 
-#RegisterFormId {
+.BackgroundAnimationSquare-2 {
   position: absolute;
-  top: 100%;
-  height: 45%;
-  width: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.5s;
-  background: transparent;
+  animation: increase-2 25s infinite forwards;
 }
 
-.LoginRegisterInput {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 35px;
-  font-size: 20px;
-  border: none;
-  border-width: 0px;
-  border-bottom: white solid 1px;
-  color: white;
-  background: transparent;
-  text-align: center;
-  box-shadow: none;
+.BackgroundAnimationSquare-3 {
+  position: absolute;
+  animation: increase-3 20s infinite forwards;
 }
 
-.LoginRegisterInput:focus {
-  outline: none;
-  border-color: khaki;
+@keyframes increase-1 {
+  0% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
+
+  10% {
+    transform: translate(25%, 25%);
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  40% {
+    transform: translate(25%, 25%);
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+
+  50% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
 }
 
-.LoginRegisterInput:hover {
-  border-color: khaki;
+@keyframes increase-2 {
+  0% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
+
+  55% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
+
+  60% {
+    transform: translate(20%, 20%);
+    height: 1.2vw;
+    width: 1.2vw;
+  }
+
+  85% {
+    transform: translate(20%, 20%);
+    height: 1.2vw;
+    width: 1.2vw;
+  }
+
+  90% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
 }
 
-.LoginRegisterButton {
-  border: none;
-  margin-top: 30px;
-  height: 40px;
-  width: 100%;
-  background: transparent;
-  display: block;
-  font-size: 26px;
-  color: white;
-  outline: none;
-  border-radius: 15px;
-  border: white solid 2px;
-}
+@keyframes increase-3 {
+  0% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
 
-.LoginButton:hover {
-  background: hsla(340, 87%, 59%, 1) 100%;
-}
+  15% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
 
-.LoginButton:active {
-  background: rgba(241, 59, 120, 0.637) 100%;
-}
+  23% {
+    transform: translate(33, 33%, 33, 33%);
+    height: 2vw;
+    width: 2vw;
+  }
 
-.RegisterButton:hover {
-  background: hsla(217, 100%, 50%, 1) 20%;
-}
+  90% {
+    transform: translate(33, 33%, 33, 33%);
+    height: 2vw;
+    width: 2vw;
+  }
 
-.RegisterButton:active {
-  background: rgba(0, 98, 255, 0.644) 20%;
+  93% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    height: 1vw;
+    width: 1vw;
+  }
 }
