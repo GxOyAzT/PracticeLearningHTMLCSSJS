@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sytle.css">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="Shader"></div>
+  <div class="Background"></div>
+  <div id="IconContainer" onclick="HideOrShowNavigationBar()">
+  </div>
+  <div id="NavigationBar" style="top: -100px;">
+    <div class="NBButton">
+      <a class="NBBLink" href="#"><img class="NBBLImage" src="images/folder-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Flashcard Groups</p>
+      </div>
+    </div>
+
+    <div class="NBButton">
+      <a class="NBBLink" href="#"><img class="NBBLImage" src="images/logout-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Log out</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="MainFrame">
+    <div id="CreateNewGroupButton" onclick="ShowCreateNewGroupPanel()">
+      <img src="images/plus-icon.png"/>
+      <p>New</p>
+    </div>
+  </div>
+
+  <div></div>
+
+  <form id="CreateNewGroupPanel">
+    <input id="CNGPName" placeholder="Name" maxlength="30" type="text"/>
+    <textarea id="CNGPDescription" placeholder="Description (optional)" maxlength="150" type="text"></textarea>
+    <a id="CNGPConfirm" type="submit">
+      <img src="images/plus-icon.png" />
+      <p>Create</p>
+    </a>
+    <div id="CNGPDiscard" onclick="HideCreateNewGroupPanel()">
+      <img src="images/discard-icon.png" />
+      <p>Discard</p>
+    </div>
+  </form>
+  <script src="script.js"></script>
+  <script src="scriptGroupPage.js"></script>
+</body>
+
+</html>
