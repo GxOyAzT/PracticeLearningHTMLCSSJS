@@ -1,11 +1,24 @@
+var isHidden = false;
+
 function HideOrShowNavigationBar(){
   var navBar = document.getElementById("NavigationBar");
 
-  if (navBar.style.top == "140px")
+  if (isHidden)
   {
-    navBar.style.top = "-100px";
+    isHidden = false;
+    if (window.innerWidth < 500){
+      navBar.style.top = "-200px";
+      return;
+    }
+
+    navBar.style.top = "-200px";
     return;
   }
 
-  navBar.style.top = "140px";
+  isHidden = true;
+  if (window.innerWidth < 500){
+    navBar.style.top = "45px";
+    return;
+  }
+  navBar.style.top = "80px";
 }

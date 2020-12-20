@@ -1,0 +1,179 @@
+#CreateNewGroupButton {
+  position: absolute;
+  display: inline;
+  top: 15px;
+  right: 15px;
+  height: 60px;
+  width: 180px;
+  background: #336ba7;
+  border-radius: 15px;
+}
+
+#CreateNewGroupButton > img {
+  position: relative;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  left: 10px;
+  background: transparent;
+}
+
+#CreateNewGroupButton > p {
+  display: inline;
+  float: left;
+  background: transparent;
+  font-size: 30px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+#CreateNewGroupButton:hover {
+  background: #4a8bd1;
+}
+
+#CreateNewGroupButton:active {
+  border-color: #fff;
+}
+
+#CreateNewGroupPanel {
+  position: absolute;
+  background: #4a8bd1;
+  height: 400px;
+  width: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  z-index: 1001;
+}
+
+#CNGPName {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 35px;
+  font-size: 25px;
+  border: none;
+  border-bottom: white solid 1px;
+  color: white;
+  background: transparent;
+  text-align: left;
+}
+
+#CNGPName:hover {
+}
+
+#CNGPName:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: wheat;
+}
+
+#CNGPDescription {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 200px;
+  font-size: 25px;
+  border: none;
+  border: white solid 1px;
+  color: white;
+  background: transparent;
+}
+
+#CNGPDescription:focus {
+  outline: none;
+}
+
+#CNGPConfirm {
+  display: inline;
+  position: absolute;
+  background: #1b7029;
+  height: 40px;
+  width: 150px;
+  bottom: 30px;
+  left: 120px;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#CNGPConfirm:hover {
+  background: #218f33;
+}
+
+#CNGPConfirm:active {
+}
+
+#CNGPConfirm > img {
+  position: absolute;
+  height: 30px;
+  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+#CNGPConfirm > p {
+  color: white;
+  position: absolute;
+  background: transparent;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+#CNGPDiscard {
+  display: inline;
+  position: absolute;
+  background: #761212;
+  height: 40px;
+  width: 150px;
+  bottom: 30px;
+  right: 120px;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#CNGPDiscard:hover {
+  background: #a81818;
+}
+
+#CNGPDiscard > img {
+  position: absolute;
+  height: 30px;
+  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+#CNGPDiscard > p {
+  color: white;
+  position: absolute;
+  background: transparent;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  .CreateNewGroupPanel {
+    height: auto;
+    width: 100%;
+  }
+}
