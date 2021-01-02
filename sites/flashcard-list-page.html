@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/flashcard-list-page-css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+  <title>flashcards-list-page</title>
+</head>
+<body>
+  <div id="Shader"></div>
+  
+  <div class="Background"></div>
+  
+  <div id="IconContainer" onclick="HideOrShowNavigationBar()">
+  </div>
+  
+  <div id="NavigationBar">
+    <div class="NBButton">
+      <a class="NBBLink" href="groups.html"><img class="NBBLImage" src="/images/folder-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Flashcard Groups</p>
+      </div>
+    </div>
+    <div class="NBButton">
+      <a class="NBBLink" href="#"><img class="NBBLImage" src="/images/logout-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Log out</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="MainFrame">
+    <div id="CreateNewFlashcardButton" onclick="ShowCreateNewFlashcardPanel()">
+      <img src="/images/plus-icon.png"/>
+      <p>Add</p>
+    </div>
+    <div class="FlashcardList">
+      <div class="FlashcardListItem">
+        <div class="FLINative">Native world flashcards</div>
+        <div class="FLIForeign">Lorem, ipsum dolor.</div>
+        <div class="FLIButtonsContainer">
+          <div class="FLIBCModify" onclick="ShowModifyFlashcardPanel('Native world flashcards', 'Lorem, ipsum dolor.', '001')">
+            <img src="/images/modify-icon.png" />
+          </div>
+          <a class="FLIBCDelete" href="#">
+            <img src="/images/delete-icon.png"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CreateNewFlashcard" id="CreateNewFlashcardId">
+    <form>
+      <input maxlength="100" class="CNFFlashcardWorldInput" id="FlashcardForeignId" type="text" placeholder="foreign"/>
+      <input maxlength="100" style="top: 100px;" class="CNFFlashcardWorldInput" id="FlashcardNativeId" type="text" placeholder="native"/>
+      <input type="submit" id="CNFPConfirm" type="submit" value="Create">
+      <div id="CNFPDiscard" onclick="HideCreateNewFlashcardPanel()">
+        <img src="/images/discard-icon.png" />
+        <p>Discard</p>
+      </div>
+    </form>
+  </div>
+
+  <div class="ModifyFlashcardPanel" id="ModifyFlashcardPanelId">
+    <form>
+      <input name="modifyFlashcardId" hidden type="text" id="FlashcardIdModify"/>
+      <input maxlength="100" class="CNFFlashcardWorldInput" id="FlashcardForeignModifyId" type="text" placeholder="foreign" />
+      <input maxlength="100" style="top: 100px;" class="CNFFlashcardWorldInput" id="FlashcardNativeModifyId" type="text"
+        placeholder="native" />
+      <input type="submit" id="CNFPConfirm" type="submit" value="Modify">
+      <div id="CNFPDiscard" onclick="HideModifyFlashcardPanel()">
+        <img src="/images/discard-icon.png" />
+        <p>Discard</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/flashcard-list-page.js"></script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="group-style.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/group-style.css">
   <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -19,13 +19,13 @@
 
   <div id="NavigationBar">
     <div class="NBButton">
-      <a class="NBBLink" href="groups.html"><img class="NBBLImage" src="images/folder-icon.png"></a>
+      <a class="NBBLink" href="groups.html"><img class="NBBLImage" src="/images/folder-icon.png"></a>
       <div class="NBButtonClue">
         <p>Flashcard Groups</p>
       </div>
     </div>
     <div class="NBButton">
-      <a class="NBBLink" href="#"><img class="NBBLImage" src="images/logout-icon.png"></a>
+      <a class="NBBLink" href="#"><img class="NBBLImage" src="/images/logout-icon.png"></a>
       <div class="NBButtonClue">
         <p>Log out</p>
       </div>
@@ -34,7 +34,7 @@
 
   <div id="MainFrame">
     <div id="CreateNewGroupButton" onclick="ShowCreateNewGroupPanel()">
-      <img src="images/plus-icon.png" />
+      <img src="/images/plus-icon.png" />
       <p>New</p>
     </div>
     <div id="GroupsWrapper">
@@ -44,14 +44,14 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis incidunt at tenetur nihil nostrum ea nam praesentium modi magni, odio temporibus nisi, aliquam fugiat corrupti in voluptatem totam fugit ex eveniet vero doloribus.</p>
         <div class="GFButtonsWrapper">
           <div class="BFBWDelete" onclick="DeleteGroupWarningMessageShow()">
-            <img src="images/delete-icon.png"/>
+            <img src="/images/delete-icon.png"/>
           </div>
-          <div class="BFBWDetails">
-            <img src="images/delete-icon.png" />
-          </div>
-          <div class="BFBWPractice">
-            <img src="images/delete-icon.png" />
-          </div>
+          <a href="#" class="BFBWDetails">
+            <img src="/images/modify-icon.png" />
+          </a>
+          <a href="#" class="BFBWPractice">
+            <img src="/images/delete-icon.png" />
+          </a>
         </div>
       </div>
     </div>
@@ -61,11 +61,11 @@
     <input id="CNGPName" placeholder="Name" maxlength="30" type="text" />
     <textarea id="CNGPDescription" placeholder="Description (optional)" maxlength="150" type="text"></textarea>
     <a id="CNGPConfirm" type="submit">
-      <img src="images/plus-icon.png" />
+      <img src="/images/plus-icon.png" />
       <p>Create</p>
     </a>
     <div id="CNGPDiscard" onclick="HideCreateNewGroupPanel()">
-      <img src="images/discard-icon.png" />
+      <img src="/images/discard-icon.png" />
       <p>Discard</p>
     </div>
   </form>
@@ -79,8 +79,8 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
-  <script src="group-script.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/group-script.js"></script>
 </body>
 
 </html>
