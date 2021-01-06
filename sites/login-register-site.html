@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/login-register-style.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Login Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="Background"></div>
+  <div class="LoginRegisterMainContainer">
+    <div class="LoginContainer LoginRegisterContainers" id="LoginContainerId" onclick="ClickLoginContainer()">
+      <div class="LoginRegisterLabel" id="LoginLabel">Log in</div>
+      <form id="LogInFormId">
+        <input type="text" placeholder="emial" class="LoginRegisterInput" />
+        <input type="password" style="margin-top: 20px;" placeholder="password" class="LoginRegisterInput" />
+        <button class="LoginButton LoginRegisterButton" type="submit">Log in</button>
+      </form>
+    </div>
+    <div class="RegisterContainer LoginRegisterContainers" id="RegisterContainerId" onclick="ClickRegisterContainer()">
+      <div class="LoginRegisterLabel" id="RegisterLabel">Register</div>
+      <form id="RegisterFormId">
+        <input type="text" placeholder="emial" class="LoginRegisterInput" />
+        <input type="password" style="margin-top: 20px;" placeholder="password" class="LoginRegisterInput" />
+        <input type="password" style="margin-top: 20px;" placeholder="repeat password" class="LoginRegisterInput" />
+        <button class="RegisterButton LoginRegisterButton" type="submit">Log in</button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <div id="ButtonChangeToLogIn" onclick="ClickRegisterButton()">
+      <input value="Register" readonly />
+    </div>
+    <div id="ButtonChangeToRegister" onclick="ClickLoginButton()">
+      <input value="Login" readonly />
+    </div>
+  </div>
+  
+  <!-- NEW -->
+  <div class="LoginErrorMessagesPanel" id="LoginErrorMessagesPanelId">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error dicta suscipit alias magni quis aliquid totam?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error dicta suscipit alias magni quis aliquid totam?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error dicta suscipit alias magni quis aliquid totam?</p>
+    <br/>
+    <div class="LEMPHideButton" onClick="HideLoginErrorMessagesPanel()">
+      <p>OK</p>
+    </div>
+  </div>
+
+  <script src="/scripts/login-register-script.js"></script>
+</body>
+
+</html>

@@ -9,6 +9,10 @@
   border-radius: 15px;
 }
 
+#CreateNewFlashcardButton:hover {
+  background: #4084ce;
+}
+
 #CreateNewFlashcardButton > img {
   position: relative;
   height: 40px;
@@ -90,6 +94,10 @@
   border-radius: 10px;
 }
 
+.FLIBCModify:hover > img {
+  background: rgb(77, 77, 255);
+}
+
 .FLIBCModify > img {
   background: rgb(63, 63, 218);
   height: 100%;
@@ -103,6 +111,10 @@
   position: relative;
   margin-left: 10px;
   border-radius: 10px;
+}
+
+.FLIBCDelete:hover > img {
+  background: rgb(255, 67, 67);
 }
 
 .FLIBCDelete > img {
@@ -258,7 +270,7 @@
   .FLINative,
   .FLIForeign {
     margin-left: 2px;
-    width: calc(100% - 140px);
+    width: calc(100% - 130px);
   }
 
   .ModifyFlashcardPanel {
@@ -269,5 +281,9 @@
   .FlashcardList {
     width: 98%;
     margin: auto;
+  }
+
+  .FLIButtonsContainer {
+    right: 2px;
   }
 }

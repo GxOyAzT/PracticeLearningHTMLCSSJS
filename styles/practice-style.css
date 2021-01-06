@@ -1,0 +1,68 @@
+.FlashcardPractice {
+  display: none;
+  position: fixed;
+  background: #a046a6;
+  height: 360px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px 0px 30px 0px;
+}
+
+.FlashcardPractice > p {
+  background: transparent;
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+}
+
+.ButtonsPracticeStatusWrpaer {
+  display: none;
+  position: fixed;
+  width: 500px;
+  height: 70px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.BPSButton {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.BPSButton > p {
+  position: relative;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.BPSOk {
+  background: green;
+  left: 0px;
+}
+
+.BPSAlmostKnow {
+  background: rgb(156, 156, 27);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.BPSDontKnow {
+  background: red;
+  right: 0px;
+}

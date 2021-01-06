@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/practice-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="Background"></div>
+
+  <div id="IconContainer" onclick="HideOrShowNavigationBar()">
+  </div>
+
+  <div id="NavigationBar">
+    <div class="NBButton">
+      <a class="NBBLink" href="groups.html"><img class="NBBLImage" src="/images/folder-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Flashcard Groups</p>
+      </div>
+    </div>
+    <div class="NBButton">
+      <a class="NBBLink" href="#"><img class="NBBLImage" src="/images/logout-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Log out</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="MainFrame">
+    <input hidden id="TotalFlashcardCountId" value="3"/>
+
+    <!-- foreach() START -->
+
+    <!-- ELEMENT 1 -->
+    <input hidden id="Flashcard-id-1"/>
+    <input hidden id="Flashcard-practiceStatus-1" />
+    <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-1', 'FlashcardPractice-back-1')" id="FlashcardPractice-front-1">
+      <p>FlashcardPractice-1-front</p>
+    </div>
+    <div class="FlashcardPractice" id="FlashcardPractice-back-1">
+      <p>FlashcardPractice-1-back</p>
+    </div>
+
+    <!-- ELEMENT 2 -->
+    <input hidden id="Flashcard-id-2" />
+    <input hidden id="Flashcard-practiceStatus-2" />
+    <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-2', 'FlashcardPractice-back-2')"
+      id="FlashcardPractice-front-2">
+      <p>FlashcardPractice-2-front</p>
+    </div>
+    <div class="FlashcardPractice" id="FlashcardPractice-back-2">
+      <p>FlashcardPractice-2-back</p>
+    </div>
+
+    <!-- ELEMENT 3 -->
+    <input hidden id="Flashcard-id-3" />
+    <input hidden id="Flashcard-practiceStatus-3" />
+    <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-3', 'FlashcardPractice-back-3')"
+      id="FlashcardPractice-front-3">
+      <p>FlashcardPractice-3-front</p>
+    </div>
+    <div class="FlashcardPractice" id="FlashcardPractice-back-3">
+      <p>FlashcardPractice-3-back</p>
+    </div>
+
+    <!-- foreach() END -->
+
+    <form method="post">
+      <div class="ButtonsPracticeStatusWrpaer" id="ButtonsPracticeStatusWrpaerId">
+        <div class="BPSButton BPSOk" onclick="SetFlashcardAsKnow()"><p>Know</p></div>
+        <div class="BPSButton BPSAlmostKnow" onclick="SetFlashcardAsAlmostKnow()"><p>Almost know</p></div>
+        <div class="BPSButton BPSDontKnow" onclick="SetFlashcardAsDontKnow()"><p>Don't know</p></div>
+      </div>
+    </form>
+  </div>
+
+  <script src="/scripts/practice-script.js"></script>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>
