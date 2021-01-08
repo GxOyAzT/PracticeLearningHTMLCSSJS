@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/before-practice-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="Background"></div>
+
+  <div id="IconContainer" onclick="HideOrShowNavigationBar()">
+  </div>
+
+  <div id="NavigationBar">
+    <div class="NBButton">
+      <a class="NBBLink" href="groups.html"><img class="NBBLImage" src="/images/folder-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Flashcard Groups</p>
+      </div>
+    </div>
+    <div class="NBButton">
+      <a class="NBBLink" href="#"><img class="NBBLImage" src="/images/logout-icon.png"></a>
+      <div class="NBButtonClue">
+        <p>Log out</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="MainFrame">
+    <div class="PracticeOrLearnWrapper" id="PracticeOrLearnWrapperId">
+      <p class="Noselect">What do you want?</p>
+      <br/>
+      <div class="POLWButton Noselect" onclick="SetModeAsLearnNew()">
+        <p>Learn</p>
+      </div>
+      <div class="POLWButton Noselect" onclick="SetModeAsPractice()">
+        <p>Practice</p>
+      </div>
+    </div>
+
+    <div class="HowManyFlashcardsWrapper" id="HowManyFlashcardsWrapperId">
+      <p class="Noselect">How many?</p>
+      <div class="HMFWItem" onclick="SetQuantity(3)">
+        <p class="Noselect">3</p>
+      </div>
+      <div class="HMFWItem" onclick="SetQuantity(10)">
+        <p>10</p>
+      </div>
+    </div>
+
+    <div >
+      <form class="StartWrapper" id="StartWrapperId">
+        <input type="number" hidden id="ModePracticeLearnId" />
+        <input type="number" hidden id="HowManyFlashcardsId" />
+        <a href="#" class="SWButton">
+          <p class="Noselect">Start</p>
+        </a>
+      </form>
+    </div>
+  </div>
+
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/before-practice-script.js"></script>
+</body>
+
+</html>

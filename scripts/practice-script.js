@@ -19,10 +19,12 @@ function SetFlashcardAsKnow(){
   document.getElementById("FlashcardPractice-back-" + actualFlashcard).style.display = "none";
   document.getElementById("ButtonsPracticeStatusWrpaerId").style.display = "none";
 
-  if (actualFlashcard <= flashcardCount){
+  if (actualFlashcard < flashcardCount){
     document.getElementById("FlashcardPractice-front-" + (actualFlashcard + 1)).style.display = "block";
     return;
   }
+
+  ShowFinalPanel();
 }
 
 function SetFlashcardAsAlmostKnow(){
@@ -32,10 +34,12 @@ function SetFlashcardAsAlmostKnow(){
   document.getElementById("FlashcardPractice-back-" + actualFlashcard).style.display = "none";
   document.getElementById("ButtonsPracticeStatusWrpaerId").style.display = "none";
 
-  if (actualFlashcard <= flashcardCount){
+  if (actualFlashcard < flashcardCount){
     document.getElementById("FlashcardPractice-front-" + (actualFlashcard + 1)).style.display = "block";
     return;
   }
+
+  ShowFinalPanel();
 }
 
 function SetFlashcardAsDontKnow(){
@@ -45,8 +49,14 @@ function SetFlashcardAsDontKnow(){
   document.getElementById("FlashcardPractice-back-" + actualFlashcard).style.display = "none";
   document.getElementById("ButtonsPracticeStatusWrpaerId").style.display = "none";
 
-  if (actualFlashcard <= flashcardCount){
+  if (actualFlashcard < flashcardCount){
     document.getElementById("FlashcardPractice-front-" + (actualFlashcard + 1)).style.display = "block";
     return;
   }
+
+  ShowFinalPanel();
+}
+
+function ShowFinalPanel(){
+  document.getElementById("FinalPanelId").style.display = "block";
 }

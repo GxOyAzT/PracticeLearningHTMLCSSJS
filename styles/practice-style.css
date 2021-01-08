@@ -66,3 +66,76 @@
   background: red;
   right: 0px;
 }
+
+.FinalPanel {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 500px;
+  background: transparent;
+}
+
+.FinalPanel > p {
+  position: relative;
+  background: transparent;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+}
+
+.FPButton {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.FPButtonGiveMore {
+  background: rgb(96, 167, 25);
+}
+
+.FPButtonGiveMore:hover {
+  background: rgb(112, 194, 29);
+}
+
+.FPButtonThatsEnough {
+  background: #0d6fac;
+}
+
+.FPButtonThatsEnough:hover {
+  background: #1189d4;
+}
+
+.FPButton > p {
+  position: relative;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 500px) {
+  .FlashcardPractice {
+    width: 96%;
+    font-size: 20px;
+  }
+
+  .ButtonsPracticeStatusWrpaer {
+    width: 96%;
+  }
+
+  .FinalPanel {
+    width: 96%;
+  }
+}

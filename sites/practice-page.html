@@ -33,49 +33,61 @@
   <div id="MainFrame">
     <input hidden id="TotalFlashcardCountId" value="3"/>
 
-    <!-- foreach() START -->
+    <form>
+      <!-- foreach() START -->
+      
+      <!-- ELEMENT 1 -->
+      <input hidden id="Flashcard-id-1"/>
+      <input hidden id="Flashcard-practiceDrirection-1">
+      <input hidden id="Flashcard-practiceStatus-1" />
+      <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-1', 'FlashcardPractice-back-1')" id="FlashcardPractice-front-1">
+        <p>FlashcardPractice-1-front</p>
+      </div>
+      <div class="FlashcardPractice" id="FlashcardPractice-back-1">
+        <p>FlashcardPractice-1-back</p>
+      </div>
 
-    <!-- ELEMENT 1 -->
-    <input hidden id="Flashcard-id-1"/>
-    <input hidden id="Flashcard-practiceStatus-1" />
-    <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-1', 'FlashcardPractice-back-1')" id="FlashcardPractice-front-1">
-      <p>FlashcardPractice-1-front</p>
-    </div>
-    <div class="FlashcardPractice" id="FlashcardPractice-back-1">
-      <p>FlashcardPractice-1-back</p>
-    </div>
+      <!-- ELEMENT 2 -->
+      <input hidden id="Flashcard-id-2" />
+      <input hidden id="Flashcard-practiceDrirection-2">
+      <input hidden id="Flashcard-practiceStatus-2" />
+      <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-2', 'FlashcardPractice-back-2')"
+        id="FlashcardPractice-front-2">
+        <p>FlashcardPractice-2-front</p>
+      </div>
+      <div class="FlashcardPractice" id="FlashcardPractice-back-2">
+        <p>FlashcardPractice-2-back</p>
+      </div>
 
-    <!-- ELEMENT 2 -->
-    <input hidden id="Flashcard-id-2" />
-    <input hidden id="Flashcard-practiceStatus-2" />
-    <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-2', 'FlashcardPractice-back-2')"
-      id="FlashcardPractice-front-2">
-      <p>FlashcardPractice-2-front</p>
-    </div>
-    <div class="FlashcardPractice" id="FlashcardPractice-back-2">
-      <p>FlashcardPractice-2-back</p>
-    </div>
+      <!-- ELEMENT 3 -->
+      <input hidden id="Flashcard-id-3" />
+      <input hidden id="Flashcard-practiceDrirection-3">
+      <input hidden id="Flashcard-practiceStatus-3" />
+      <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-3', 'FlashcardPractice-back-3')"
+        id="FlashcardPractice-front-3">
+        <p>FlashcardPractice-3-front</p>
+      </div>
+      <div class="FlashcardPractice" id="FlashcardPractice-back-3">
+        <p>FlashcardPractice-3-back</p>
+      </div>
 
-    <!-- ELEMENT 3 -->
-    <input hidden id="Flashcard-id-3" />
-    <input hidden id="Flashcard-practiceStatus-3" />
-    <div class="FlashcardPractice" onclick="ShowAnswer('FlashcardPractice-front-3', 'FlashcardPractice-back-3')"
-      id="FlashcardPractice-front-3">
-      <p>FlashcardPractice-3-front</p>
-    </div>
-    <div class="FlashcardPractice" id="FlashcardPractice-back-3">
-      <p>FlashcardPractice-3-back</p>
-    </div>
+      <div class="FinalPanel" id="FinalPanelId">
+        <p>All done</p>
+        <br />
+        <input type="submit" class="FPButton FPButtonGiveMore" value="Give me more"/>
+        <br/>
+        <br />
+        <input type="submit" class="FPButton FPButtonThatsEnough" value="That's enough" />
+      </div>
 
+    </form>
     <!-- foreach() END -->
 
-    <form method="post">
-      <div class="ButtonsPracticeStatusWrpaer" id="ButtonsPracticeStatusWrpaerId">
-        <div class="BPSButton BPSOk" onclick="SetFlashcardAsKnow()"><p>Know</p></div>
-        <div class="BPSButton BPSAlmostKnow" onclick="SetFlashcardAsAlmostKnow()"><p>Almost know</p></div>
-        <div class="BPSButton BPSDontKnow" onclick="SetFlashcardAsDontKnow()"><p>Don't know</p></div>
-      </div>
-    </form>
+    <div class="ButtonsPracticeStatusWrpaer" id="ButtonsPracticeStatusWrpaerId">
+      <div class="BPSButton BPSOk" onclick="SetFlashcardAsKnow()"><p>Know</p></div>
+      <div class="BPSButton BPSAlmostKnow" onclick="SetFlashcardAsAlmostKnow()"><p>Almost know</p></div>
+      <div class="BPSButton BPSDontKnow" onclick="SetFlashcardAsDontKnow()"><p>Don't know</p></div>
+    </div>
   </div>
 
   <script src="/scripts/practice-script.js"></script>
